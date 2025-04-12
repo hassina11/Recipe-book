@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+</head>
+<body>
+    <b>
+        <nav>
+            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+            <a href="add-recipe.html">Add Recipe</a>&nbsp;&nbsp;&nbsp;
+            <a href="recipe-list.html">Recipe List</a>
+        </nav>
+    </b>
+    
+    <h1>Add Your Recipe </h1>
+    <p>"Welcome to the 'Add Recipe' section! Here, you can share your favorite recipes with the world. <br>Simply fill in the required details, such as the recipe name, ingredients, and step-by-step instructions. <br>You can also add a photo of your dish to inspire others. Once you're done, click 'Submit,' <br>and your recipe will be added to our collection for everyone to discover and enjoy!"
+    </p>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend><b>Recipe Information</b></legend>
+            <label for="recipename">Recipe Name</label><br>
+        <input type="text" id="recipename" name="recipename" required><br><br>
+        <label for="recipenumber">Recipe Number</label><br>
+        <input type="text" id="recipenumber" name="recipenumber" required><br><br>
+        <label for="date">Creation Date</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        <label for="difficulty">Defficulty Level</label><br>
+        <input type="radio" id="easy" name="difficulty" value="Easy" checkeds required>
+        <label for="easy">Easy</label>
+        <input type="radio" id="medium" name="difficulty" value="Medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="hard" name="difficulty" value="Hard">
+        <label for="hard">Hard</label><br><br>
+        <label for="preptime">Preparation Time (minutes)</label><br>
+        <input type="number" id="preptime" name="preptime" min="1" required > <br><br>
+        <label for="mealType">MealType</labelr><br>
+        <select name="mealType" id="mealType">
+            <option value="appetizers">Appetizers</option>
+            <option value="soup">Soup</option>
+            <option value="salads">Salads</option>
+            <option value="vegetables">Vegetables</option>
+            <option value="main dishes">Main Dishes</option>
+            <option value="dessert">Dessert</option>
+        </select><br><br>
+        
+        <label for="ingredients">Ingredients</label><br>
+        <textarea name="ingredients" id="ingredients" rows="10" cols="50" placeholder="list ingredients here " required></textarea><br><br>
+        <label for="instructions">Instructions</label><br>
+        <textarea name="instructions" id="instructions" rows="10" cols="50" placeholder="write the steps here" required></textarea><br><br>
+        <label for="recipeimage">Upload a photo</label><br>
+        <input type="file" id="recipeimage" name="recipeimage" accept="image/*" required><br><br>
+                 
+        </fieldset>
+        <fieldset>
+            <legend><b>Author Information</b></legend>
+            <label for="authorname">Your Name </label>
+            <input type="text" id="authorname" name="authorname" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" requireds>
+            
+        </fieldset>
+        <input type="submit" value="submit Recipe">
+        
+
+        
+        
+    </body>
+</html>
